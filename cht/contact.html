@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Prototype Home Page</title>
+        <link rel="shortcut icon" href="../pics/cr_favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../pics/cr_favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" media="(max-width: 1400px)" href="medium.css">
+        <link rel="stylesheet" href="../plugin/colorbox-master/example1/colorbox.css">
+        <script src="../plugin/colorbox-master/jquery-1.11.2.min.js" charset="big5"></script>
+        <script src="../plugin/colorbox-master/jquery.colorbox-min.js" charset="big5"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".test").on('click', function() {
+                $.colorbox({inline:true, width:"50%", open:true });
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="popup">
+            <embed id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.275417992582!2d121.5197288!3d25.05865260000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a941f84783a3%3A0xe8d8f5768879c89b!2zMTAz5Y-w5YyX5biC5aSn5ZCM5Y2A6JCs5YWo6KGXMTPomZ8!5e0!3m2!1szh-TW!2stw!4v1421659962522" frameborder="0" style="border:0" type="text/html"></embed>
+        </div>
+            <div class="contact"><span class="contact_span">Prototype Home</span></div>
+            <div class="contact"><span class="contact_span">台北市天龍區天龍八路168號</span></div>
+            <div class="contact"><span class="contact_span">Hours: 9:00 - 21:00</span></div>
+            <div class="contact"><span class="contact_span">Email: support@company.com</span></div>
+            <div class="contact"><span class="contact_span">Tel: 0912345678</span><a href="skype: ???"><img class="contact_span" src="../pics/social_media_icon/32/skype.png"></a></div>
+            <div class="contact"><span class="contact_span">Fax: 02-23943447</span></div>
+    </body>
+</html>
