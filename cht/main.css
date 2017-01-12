@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+body {    
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    font-family: 'Raleway', "微軟正黑體";
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.header {
+    width: inherit;
+    height: 60px;
+    font-size: 90%;
+}
+
+.header div {
+    margin-top: 5px;
+    height: auto;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.header img {
+    width: 25px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.section {
+    background-color:white;
+    width: 1200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nav {
+    width: 1200px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+    border: none;
+    outline: none;
+}
+
+.aside {
+    max-height: 550px;
+    text-align: left;
+    float: left;
+    margin-top: 50px;
+    width: 19%;
+}
+
+.aside ul:first-child {
+    list-style: none;
+    margin-top: -10px;
+}
+
+.aside ul li {
+    color: grey;
+    padding-bottom: 5px;
+}
+
+.aside ul li.menuHeader {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    float:left;
+    text-align: center;
+    width: inherit;
+    min-height: 20px;
+    margin-top: 50px;
+    font-size: 90%;
+    box-shadow: 0px -1px 2px rgba(0,0,0,0.1);
+}
+
+/* self defined list for navigation menu */
+.nav ul li {
+	float: left;
+    font-size: 125%;
+    padding: 5px 30px;
+}
+
+.nav ul li:last-child {
+    padding: 5px 0px 5px 30px;
+}
+	
+.nav ul li a {
+	color: grey;
+	display: block;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: brown;
+}
+
+.nav ul {
+    float: right;
+    margin-top: 35px;
+	list-style: none;
+	position: relative;
+    display: inline-table;
+}
+.nav ul:after {
+	content: "";
+    clear: both;
+    display: block;
+}
+
+/* link formatting */
+a:link {
+    color: grey;
+    text-decoration: none;
+    border: 0;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none;
+    border: 0;
+}
+
+a:hover {
+    color: brown;
+    text-decoration: none;
+    border: 0;
+}
+
+a img {
+    border: 0;
+}
+
+/* do not allow images to be dragged */
+img {
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* self defined scrollbars */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/* formatting for colorbox popups */
+.popup {
+    margin: 25px;
+    max-width: 1000px;
+    max-height: 800px;
+}
+
+/* formatting product pop up page */
+.product {
+    width: 700px;
+    height: 400px;
+    margin: 20px;
+    max-width: 1000px;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.productImg {
+    float: left;
+    width: 350px;
+}
+
+#productGeneric.product {
+    float: left; 
+    height: auto;
+    width: 300px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+#productDesc.product {
+    float: left; 
+    height: 40%;
+    width: 300px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+#productHalf.product {
+    float: left; 
+    text-align: right;
+    height: auto;
+    width: 150px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+/* formatting user info page */
+.user {
+    width: 400px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user h4 {
+    color: red;
+}
+
+#floatLeft.user {
+    float: left;
+    margin-left: 40px;
+}
+
+#userHalfNoClear.user {
+    float: left; 
+    text-align: left;
+    height: 25px;
+    width: 100px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#userHalfClear.user {
+    clear: both;
+    float: left; 
+    text-align: left;
+    height: 25px;
+    width: 100px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#userHalf.user {
+    float: left; 
+    text-align: left;
+    height: 25px;
+    width: 290px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* formatting for product with hover effect */
+.imagedropshadow {
+    width: 150px;
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+}
+a:hover img.imagedropshadow {
+    width: 150px;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.productMain {
+    float: right;
+    width: 77%;
+    margin-left: 3%;
+    max-height: 550px;
+    text-align: center;
+    margin-top: 50px;
+    overflow-y: auto;
+}
+
+.productMain table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productMain table td, th {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.productMain input {
+    margin-bottom: 10px;
+}
+
+.contact_span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 35px;
+    margin-right: 20px;
+}
+
+.contact {
+    vertical-align: middle;
+    height: 35px;
+    margin: 0px 25px 10px 25px;
+}
+
+#map {
+    width: 500px;
+    height: 400px;
+}
+
+#slider1_container {
+    position: relative; 
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1176px; 
+    height: 468px;
+}
+
+div[u=slides] {
+    cursor: move;
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 1176px;
+    height: 468px;
+}
+
+#slider_arrow_left {
+    width: 30px;
+    height: 46px;
+    top: 234px;
+    left: 0px;
+}
+
+#slider_arrow_right {
+    width: 30px;
+    height: 46px;
+    top: 234px;
+    right: 0px;
+}
+
+#slide_navigator {
+    position: absolute;
+    top: 480px;
+    bottom: 16px;
+    right: 6px;
+}

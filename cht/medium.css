@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body {    
+    width: 1000px;
+}
+
+.header {
+    font-size: 70%;
+}
+
+.section {
+    width: 1000px;
+    margin-top: 40px;
+}
+
+.nav {
+    width: 1000px;
+    height: 70px;
+}
+
+.nav img {
+    margin-top: 10px;
+    width: 250px;
+}
+
+.aside {
+    max-height: 360px;
+    text-align: left;
+    float: left;
+    margin-top: 40px;
+    width: 19%;
+}
+
+.footer {
+    font-size: 70%;
+}
+
+/* self defined list for navigation menu */
+.nav ul li {
+    font-size: 110%;
+    padding: 5px 20px;
+}
+
+.nav ul li:last-child {
+    padding: 5px 0px 5px 20px;
+}
+
+/* formatting for colorbox popups */
+.popup {
+    max-width: 700px;
+    max-height: 370px;
+}
+
+/* formatting product pop up page */
+.product {
+    width: 700px;
+    height: 400px;
+    overflow: auto;
+}
+
+.productImg {
+    overflow: auto;
+}
+
+/* formatting user info page */
+.user {
+    width: 300px;
+}
+
+#userHalfNoClear.user {
+    width: 90px;
+}
+
+#userHalfClear.user {
+    width: 90px;
+}
+
+#userHalf.user {
+    width: 210px;
+}
+
+
+/* formatting for product with hover effect */
+.imagedropshadow {
+    width: 130px;
+}
+
+a:hover img.imagedropshadow {
+    width: 130px;
+}
+
+.productMain {
+    max-height: 470px;
+    margin-top: 30px;
+}
+
+#map {
+    width: 400px;
+    height: 300px;
+}
+
+#slider1_container {
+    width: 980px; 
+    height: 390px;
+}
+
+div[u=slides] {
+    width: 980px;
+    height: 390px;
+}
+
+#slider_arrow_left {
+    top: 165px;
+}
+
+#slider_arrow_right {
+    top: 165px;
+}
+
+#slide_navigator {
+    top: 400px;
+}

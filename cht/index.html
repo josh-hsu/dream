@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset='utf-8'/>
+		<title>Caffè Reunion</title>
+        <link rel="shortcut icon" href="../pics/cr_favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../pics/cr_favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" media="(max-width: 1400px)" href="medium.css">
+        <!-- implement colorbox plugin-->
+        <link rel="stylesheet" href="../plugin/colorbox-master/example1/colorbox.css">
+        <script src="../plugin/colorbox-master/jquery-1.11.2.min.js" charset="big5"></script>
+        <script src="../plugin/colorbox-master/jquery.colorbox-min.js" charset="big5"></script>
+        <script>
+			$(document).ready(function(){
+				$(".colorbox").colorbox({width:"auto", height:"auto"});
+			});
+        </script>
+        <!-- Include IE6-compatible-slider, you can fine tune the variable in jssor-slider-starter.js-->
+        <link rel="stylesheet" href="../plugin/ie6-compatible-slider/slider-style.css">
+        <script type="text/javascript" src="../plugin/ie6-compatible-slider/jssor.slider.mini.js"></script>
+        <script type="text/javascript" src="../plugin/ie6-compatible-slider/jssor-slider-starter.js"></script>
+    </head>
+    
+    <body>
+    <div class="section">
+        <!-- IE6-compatible-slider -->
+        <div id="slider1_container">
+            <!-- Slides Container -->
+            <div u="slides">
+                <div><img u="image" src="../pics/banner/banner_1.PNG" /></div>
+                <div><img u="image" src="../pics/banner/banner_2.PNG" /></div>
+                <div><img u="image" src="../pics/banner/banner_3.PNG" /></div>
+                <div><img u="image" src="../pics/banner/banner_4.PNG" /></div>
+            </div>
+            <!-- bullet navigator container -->
+            <div u="navigator" id="slide_navigator" class="jssorb05">
+                <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
+            </div>
+            <span u="arrowleft" id="slider_arrow_left" class="jssora12l"></span>
+            <span u="arrowright" id="slider_arrow_right" class="jssora12r"></span>
+            <!-- Start Slider -->
+            <script> jssor_slider1_starter('slider1_container'); </script>
+        </div>
+    </div>
+    <div class="footer"><?php printFooter()?></div>
+    </body>
+</html>
